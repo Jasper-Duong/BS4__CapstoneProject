@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: var(--font-color);
+}
+a {
+  text-decoration: none;
+}
+button:hover,
+button:focus {
+  outline: none;
+}
+button,
+input,
+select,
+label,
+li,
+span {
+  -webkit-appearance: none;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: "Quicksand", sans-serif;
+}
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #ffc600;
+  --font-color: rgba(22, 28, 45, 0.7);
+  --bg-color: #fff;
+  --heading-color: #232121;
+  --border-radius: 6px;
+  --border-radius-full: 35px;
+  --border-color: transparent;
+  --border-color-light: #eee;
+  --nav-color: #232121;
+  --dropdown-color: #fff;
+  --iframe-filter: grayscale(0%);
+  --bg-light: rgba(130, 115, 252, 0.05);
+  --bg-grey: #f7f7f7;
+  --footer-bg: #000;
+  --card-bg: #fff;
+}
+/* NAVBAR */
+header {
+  position: absolute;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar {
+  padding: 40px 0 20px;
+  background-color: transparent !important;
+}
+h1 .navbar-brand {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: #eee !important;
+}
+.search {
+  position: relative;
+}
+.search__input {
+  padding: 10px 50px 10px 20px;
+  height: 45px;
+  font-size: 16px;
+  color: var(--font-color);
+  font-weight: 400;
+  border-radius: var(--border-radius);
+  position: relative;
+  right: 0;
+  background: var(--bg-color);
+  outline: 0;
+  border: 1px solid var(--bg-color);
+}
+.search i {
+  position: absolute;
+  right: 20px;
+  font-size: 15px;
+  top: 15px;
+  cursor: pointer;
+}
+.mode__switch {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+.mode__icon {
+  display: none;
+  cursor: pointer;
+  color: #eee;
+  font-size: 24px;
+}
+.mode__icon.active {
+  display: block;
+}
+.navbar-toggler {
+  border: none;
+  padding-right: 0;
+}
+.collapse .navbar-collapse {
+  animation: none;
+  transition: all 0;
+}
+#navbarNav {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+#navbarNav a {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.25s;
+}
+#navbarNav a:hover {
+  color: var(--primary-color);
+}
+.menu__wrapper {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+.close-btn {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 900;
+  font-stretch: 100%;
+}
+.animate__zoomIn {
+  animation-duration: 0.25s;
+}
+/* INTRO */
+#intro {
+  background-size: cover;
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+    url("./../img/banner1.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: initial;
+  background-attachment: fixed;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+}
+.slogan {
+  margin-top: 125px;
+  font-size: 54px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 1.5rem;
+}
+.intro__text {
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  margin-bottom: 0;
+  padding-right: 30px;
+}
+.intro__btn{
+  background: transparent;
+  border: 2px solid #fff;
+  transition: 0.3s ease-in;
+  border-radius: var(--border-radius);
+  margin: 48px 8px 0 0;
+  padding: 12px 45px;
+}
+.intro__btn,
+.intro__btn span i {
+  color: #fff;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.intro__btn span{
+  margin-left: 0.5rem;
+}
+.intro__btn:hover{
+  background-color: white;
+}
+.intro__btn:hover,
+.intro__btn:hover span i{
+  color: var(--primary-color);
+}
