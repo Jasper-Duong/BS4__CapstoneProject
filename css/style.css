@@ -123,6 +123,7 @@ h1 .navbar-brand {
   text-align: center;
   position: absolute;
   top: 0;
+  z-index: 999;
 }
 #navbarNav a {
   color: white;
