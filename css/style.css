@@ -60,6 +60,20 @@ p {
   --footer-bg: #000;
   --card-bg: #fff;
 }
+.heading {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+.subtitle {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
 /* NAVBAR */
 header {
   position: absolute;
@@ -233,15 +247,6 @@ h1 .navbar-brand {
 #about {
   padding: 48px 0;
 }
-.about__left h1 {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1px;
-  color: var(--primary-color);
-  display: block;
-  font-family: "Pacifico", cursive;
-}
 .about__left h3 {
   font-size: 38px;
   line-height: 48px;
@@ -274,11 +279,6 @@ h1 .navbar-brand {
 }
 .info__head h1 {
   color: white;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 30px;
-  letter-spacing: 1px;
-  font-family: "Pacifico", cursive;
 }
 .info__head h3 {
   font-size: 38px;
@@ -319,7 +319,7 @@ h1 .navbar-brand {
   margin-bottom: 15px;
   font-size: 20px;
 }
-.info__item__text{
+.info__item__text {
   color: #ffdfc9;
   font-size: 18px;
   line-height: 28px;
