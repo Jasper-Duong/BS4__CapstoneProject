@@ -1,16 +1,21 @@
 @media (min-width: 1280px) {
+  /* ROOT */
   .container {
     max-width: 1200px;
   }
-}
-
-@media (min-width: 992px) {
 }
 @media (max-width: 1199px) {
   /* INTRO */
   .slogan {
     font-size: 48px;
     line-height: 58px;
+  }
+}
+@media (max-width: 1080px) {
+  /* ABOUT */
+  .about__left h3 {
+    font-size: 32px !important;
+    line-height: 40px;
   }
 }
 @media (max-width: 991px) {
@@ -21,12 +26,14 @@
   }
 }
 @media (max-width: 880px) {
+  /* INTRO */
   #intro {
     min-height: 600px;
     margin-top: 60px;
   }
 }
 @media (max-width: 800px) {
+  /* INTRO */
   .slogan {
     font-size: 40px;
     line-height: 50px;
@@ -38,11 +45,25 @@
 @media (max-width: 575px) {
 }
 @media (max-width: 600px) {
+  /* NAV */
   .search {
     display: none;
   }
+  /* ABOUT */
+  .about__left h1 {
+    font-size: 16px;
+  }
+  .about__left h3 {
+    font-size: 30px !important;
+    line-height: 38px;
+  }
+  .about__right p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 @media (max-width: 480px) {
+  /* INTRO */
   #intro {
     min-height: 450px;
   }
@@ -57,5 +78,16 @@
   .intro__btn {
     margin-top: 24px;
     padding: 10px 21px;
+  }
+}
+@media (max-width: 375px) {
+  /* ABOUT */
+  .about__left h1 {
+    font-size: 16px !important;
+    letter-spacing: 0.5px;
+  }
+  .about__left h3 {
+    font-size: 24px !important;
+    line-height: 34px;
   }
 }
