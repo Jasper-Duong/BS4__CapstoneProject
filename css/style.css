@@ -517,6 +517,7 @@ h1 .navbar-brand {
   transition: 0.3s ease-out;
   text-decoration: none;
   display: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
 #backToTop:hover{
   color: #fff;
