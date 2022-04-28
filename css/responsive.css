@@ -42,12 +42,19 @@
     font-size: 40px;
     line-height: 50px;
   }
+  /* GALLERY */
+  .gallery__text a h4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .gallery__text h6{
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 767px) {
 }
 @media (max-width: 600px) {
-  
   .heading {
     font-size: 16px;
   }
@@ -64,8 +71,8 @@
     display: none;
   }
   /* INFO */
-  
-  .info__item__title{
+
+  .info__item__title {
     font-size: 18px;
   }
 }

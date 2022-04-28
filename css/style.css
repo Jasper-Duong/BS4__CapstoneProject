@@ -73,6 +73,8 @@ p {
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
+  font-family: "Quicksand", sans-serif;
+  color: var(--heading-color);
 }
 /* NAVBAR */
 header {
@@ -324,4 +326,54 @@ h1 .navbar-brand {
   font-size: 18px;
   line-height: 28px;
   font-family: "Quicksand", sans-serif;
+}
+/* GALLERY */
+#gallery {
+  background: var(--bg-grey);
+}
+.gallery__item {
+  position: relative;
+}
+.gallery__img a img {
+  border-radius: 6px;
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery__text {
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  width: 95%;
+  color: #fff;
+  transform: translate3d(0, 10%, 0);
+}
+.gallery__text a h4 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+.gallery__text h6 {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.gallery__img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 6px;
+}
+.thumb__overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
