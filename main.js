@@ -34,3 +34,12 @@ getEle("closeBtn").onclick = function () {
   switchClass("navbarNav", "animate__zoomIn", "animate__zoomOut");
   delay(300).then(() => (getEle("navbarNav").style.display = "none"));
 };
+//BackToTop
+document.onscroll = function () {
+  if (window.scrollY > 100) {
+    getEle('backToTop').classList.add('animate__fadeIn');
+    getEle("backToTop").style.display = "block";
+  } else {
+    getEle("backToTop").style.display = "none";
+  }
+};

@@ -496,3 +496,28 @@ h1 .navbar-brand {
   color: #fff;
   max-width: 800px;
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  background: var(--primary-color);
+  padding: 0;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 35px;
+  transition: 0.3s ease-out;
+  text-decoration: none;
+  display: none;
+}
+#backToTop:hover{
+  color: #fff;
+}
