@@ -5,9 +5,10 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   color: var(--font-color);
+  scroll-behavior: smooth;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 button:hover,
 button:focus {
@@ -60,6 +61,7 @@ p {
   --footer-bg: #000;
   --card-bg: #fff;
 }
+/* GENERAL STYLE */
 .heading {
   font-size: 20px;
   font-weight: 400;
@@ -364,6 +366,12 @@ h1 .navbar-brand {
   overflow: hidden;
   border-radius: 6px;
 }
+.gallery__img img {
+  transition: all 0.5s;
+}
+.gallery__img:hover img {
+  opacity: 0.85;
+}
 .thumb__overlay {
   background: linear-gradient(
     to bottom,
@@ -376,4 +384,52 @@ h1 .navbar-brand {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+/* FOOD */
+.food__item {
+  padding: 40px 40px;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+  background-color: var(--bg-color);
+  position: relative;
+  border: 1px solid var(--border-color-light);
+}
+.food__item__head {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+}
+.food__icon {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: var(--bg-light);
+  line-height: 70px;
+  border-radius: var(--border-radius);
+  transition: 0.3s ease-in-out;
+}
+.food__icon i {
+  color: var(--primary-color);
+  font-size: 25px;
+  line-height: 70px;
+}
+.food__item:hover {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+.food__item:hover .food__icon {
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+.food__item:hover .food__icon i {
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.food__info h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: var(--heading-color);
 }

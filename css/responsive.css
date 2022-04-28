@@ -17,6 +17,10 @@
     font-size: 32px !important;
     line-height: 40px;
   }
+  /* FOOD */
+  .food__info h4 a{
+    font-size: 20px;
+  }
 }
 @media (max-width: 991px) {
   /* INTRO */
@@ -97,6 +101,12 @@
   .subtitle {
     font-size: 26px !important;
     line-height: 36px;
+  }
+}
+@media (max-width: 415px){
+  /* FOOD */
+  .food__item{
+    padding: 30px;
   }
 }
 @media (max-width: 375px) {
