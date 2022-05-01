@@ -401,7 +401,64 @@
         </div>
       </div>
     </section>
-
+    <section id="count" class="py-lg-0 py-md-5 py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="count__item">
+              <div class="count__icon">
+                <i class="far fa-building"></i>
+              </div>
+              <div class="counter mt-3">15,100</div>
+              <p class="text count__text">Branches</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="count__item">
+              <div class="count__icon">
+                <i class="fas fa-utensils"></i>
+              </div>
+              <div class="counter mt-3">19,256</div>
+              <p class="text count__text">Food Items</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="count__item">
+              <div class="count__icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="counter mt-3">12,100</div>
+              <p class="text count__text">Chefs</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-6 mt-md-0 mt-4">
+            <div class="count__item">
+              <div class="count__icon">
+                <i class="far fa-smile"></i>
+              </div>
+              <div class="counter mt-3">2,560</div>
+              <p class="text count__text">Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video">
+      <div class="video__wrapper py-5">
+        <div class="container py-lg-5">
+          <div class="video__inner">
+            <div class="video__play text-center pl-3">
+              <span type="button" class="video__icon" id="playVid">
+                <i class="fas fa-play"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog">
+      
+    </section>
     <div class="menu animate__animated animate__zoomIn" id="navbarNav">
       <div class="menu__wrapper">
         <ul class="navbar-nav">
@@ -433,10 +490,32 @@
             <a class="nav-link" href="#">Email</a>
           </li>
         </ul>
-        <button class="close-btn" id="closeBtn">X</button>
+        <button class="close-btn" id="closeNavBtn">X</button>
       </div>
     </div>
+
+    <div class="video__popup animate__animated animate__zoomIn" id="videoClip">
+      <iframe
+        title="vimeo-player"
+        src="https://player.vimeo.com/video/305185528?h=195bf3cba0"
+        frameborder="0"
+        allowfullscreen
+      >
+      </iframe>
+      <button class="close-btn" id="closeVideoBtn">X</button>
+    </div>
     <a id="backToTop" class="animate__animated" href="#">⤴</a>
+    <!-- COUNTUP  -->
+    <script src="./lib/countUp/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    ></script>
+    <script src="./lib/countUp/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

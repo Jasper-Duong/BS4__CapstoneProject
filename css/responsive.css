@@ -38,6 +38,10 @@
   .info__thumb {
     min-height: 200px;
   }
+  /* COUNT */
+  #count {
+    margin-top: 0px;
+  }
 }
 @media (max-width: 880px) {
   /* INTRO */
@@ -67,6 +71,16 @@
   .cta__title {
     font-size: 35px;
     line-height: 40px;
+  }
+}
+@media (max-width: 640px) {
+  /* COUNT */
+  .count__item {
+    text-align: center;
+    padding: 30px 10px;
+  }
+  .counter {
+    font-size: 2em;
   }
 }
 @media (max-width: 600px) {
@@ -117,6 +131,10 @@
     font-size: 26px !important;
     line-height: 36px;
   }
+  /* COUNT */
+  .count__text {
+    font-size: 0.9em;
+  }
 }
 @media (max-width: 415px) {
   /* FOOD */
@@ -128,6 +146,9 @@
     font-size: 26px;
     line-height: 34px;
   }
+  /* VIDEO POPUP */
+  
+
 }
 @media (max-width: 375px) {
   .heading {
@@ -141,4 +162,5 @@
   .btn-style {
     font-size: 16px;
   }
+  
 }
