@@ -647,3 +647,14 @@ h1 .navbar-brand {
 #closeVideoBtn {
   background-color: transparent;
 }
+
+.dark__bg {
+  background-color: #232220;
+  border-color: #232220;
+}
+.dark__text {
+  color: #c2d0da;
+}
+.dark__header {
+  color: #eee !important;
+}

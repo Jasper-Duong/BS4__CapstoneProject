@@ -5,13 +5,36 @@ function moveClass(className, idRemove, idAdd) {
   getEle(idRemove).classList.remove(className);
   getEle(idAdd).classList.add(className);
 }
-
+function addClass (className, idDiv){
+  getEle(idDiv).classList.add(className);
+}
+function removeClass (className, idDiv){
+  getEle(idDiv).classList.remove(className);
+}
 // Mode switch
-getEle("sun").onclick = function () {
-  moveClass("active", "sun", "moon");
-};
+function darken(className, darkClass) {
+  var classes = document.getElementsByClassName(className);
+  for (var i=0; i<classes.length; i++){
+    classes[i].classList.add(darkClass);
+  }
+}
+function lighten(className, darkClass) {
+  var classes = document.getElementsByClassName(className);
+  for (var i=0; i<classes.length; i++){
+    classes[i].classList.remove(darkClass);
+  }
+}
 getEle("moon").onclick = function () {
   moveClass("active", "moon", "sun");
+  darken('lightBg', 'dark__bg');
+  darken('lightText', 'dark__text');
+  darken('lightHeader', 'dark__header');
+};
+getEle("sun").onclick = function () {
+  moveClass("active", "sun", "moon");
+  lighten('lightBg', 'dark__bg');
+  lighten('lightText', 'dark__text');
+  lighten('lightHeader', 'dark__header');
 };
 
 // Menu toggler
@@ -52,3 +75,4 @@ document.onscroll = function () {
 //Play video popup
 showDiv("videoClip", "playVid")
 closeDiv("videoClip", "closeVideoBtn");
+
