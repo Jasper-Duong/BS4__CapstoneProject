@@ -42,6 +42,16 @@
   #count {
     margin-top: 0px;
   }
+  /* BLOG */
+  .blog__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* FOOTER */
+  .footer__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
 }
 @media (max-width: 880px) {
   /* INTRO */
@@ -71,6 +81,13 @@
   .cta__title {
     font-size: 35px;
     line-height: 40px;
+  }
+}
+@media (max-width: 675px) {
+  /* TESTIMONIALS */
+  .testimonial__content blockquote q {
+    font-size: 22px;
+    line-height: 32px;
   }
 }
 @media (max-width: 640px) {
@@ -135,6 +152,11 @@
   .count__text {
     font-size: 0.9em;
   }
+  /* TESTIMONIALS */
+  .testimonial__content blockquote q {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 @media (max-width: 415px) {
   /* FOOD */
@@ -145,6 +167,16 @@
   .cta__title {
     font-size: 26px;
     line-height: 34px;
+  }
+  /* FOOTER */
+  .footer__logo h2 a{
+    font-size: 26px;
+  }
+  .footer__list li {
+    margin-bottom: 8px;
+  }
+  .footer__social {
+    text-align: center;
   }
 }
 @media (max-width: 375px) {
@@ -159,5 +191,4 @@
   .btn-style {
     font-size: 16px;
   }
-  
 }

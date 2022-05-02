@@ -29,12 +29,14 @@ getEle("moon").onclick = function () {
   darken('lightBg', 'dark__bg');
   darken('lightText', 'dark__text');
   darken('lightHeader', 'dark__header');
+  darken('lightSubBg', 'dark__subBg');
 };
 getEle("sun").onclick = function () {
   moveClass("active", "sun", "moon");
   lighten('lightBg', 'dark__bg');
   lighten('lightText', 'dark__text');
   lighten('lightHeader', 'dark__header');
+  lighten('lightSubBg', 'dark__subBg');
 };
 
 // Menu toggler
