@@ -189,7 +189,7 @@ h1 .navbar-brand {
   text-align: center;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 99;
 }
 #navbarNav .menu__wrapper ul li {
   line-height: 32px;
