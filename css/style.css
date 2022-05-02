@@ -640,7 +640,7 @@ h1 .navbar-brand {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 60%;
 }
@@ -658,7 +658,6 @@ h1 .navbar-brand {
 .dark__header {
   color: #eee !important;
 }
-
 
 /* Phần blogpost */
 .post_ft_duoi {
@@ -679,7 +678,6 @@ h1 .navbar-brand {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-
 }
 
 .post_ft_duoi .post_ft_infor p {
@@ -691,47 +689,58 @@ h1 .navbar-brand {
 .blogpost {
   background: var(--bg-grey);
 }
-
 .card {
   border: none;
   background: none;
 }
-
-.blogspot_item {
+.card-body {
+  padding: 0;
+}
+.blogpost__item {
   position: relative;
 }
 
-.blogspot_item img {
+.blogpost__item img {
   border-radius: 10px;
 }
 
-.blogpost_tong .blogspot_item .blogpost_pos button.btn_pos:hover {
+.blogpost__tong .blogpost__item .blogpost__pos button.btn__pos:hover {
   background-color: #af4600;
 }
 
-.blogpost_tong .blogspot_item .blogpost_pos button.btn_pos {
-  background-color: #ff6600;
-  border-radius: 2rem;
-  border: none;
-  padding: 2px 20px;
-  transition: all 0.5s;
+.blogpost__tong .blogpost__item .blogpost__pos button.btn__pos {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
-.blogpost_tong .blogspot_item .blogpost_pos span {
+.blogpost__tong .blogpost__item .blogpost__pos span {
   color: white;
+  font-size: 15px;
 }
 
-.blogpost_tong .blogspot_item .blogpost_pos span i {
+.blogpost__tong .blogpost__item .blogpost__pos span i {
   color: white;
+  margin-right: 8px;
+  font-size: 15px;
 }
 
-.blogpost_pos {
-
-  bottom: 20px;
+.blogpost__pos {
+  bottom: 10px;
   position: absolute;
-  left: 20px;
+  left: 10px;
 }
-
+.blog__right {
+  margin-left: 10px;
+}
 /* Phần slide people */
 .carousel-indicators li {
   width: 10px;
@@ -740,7 +749,6 @@ h1 .navbar-brand {
   margin-right: 1rem;
   margin-left: 1rem;
   background-color: #232121;
-
 }
 
 .carousel-indicators {
@@ -756,7 +764,6 @@ h1 .navbar-brand {
 .slide_people {
   text-align: center;
   justify-content: space-around;
-
 }
 
 .header-title {
@@ -766,7 +773,6 @@ h1 .navbar-brand {
 .people_tong {
   max-width: 700px;
   margin: auto;
-
 }
 
 .people_tong .people_content img {
@@ -798,7 +804,6 @@ h1 .navbar-brand {
 }
 
 /* Hết phần slide people  */
-
 
 /* Phần footer */
 footer {
@@ -842,7 +847,6 @@ footer {
 /* hover */
 .footer_social a:hover {
   background-color: #ff6600;
-
 }
 
 .footer_social a i {
@@ -900,7 +904,6 @@ footer {
   padding: 2rem;
   margin-top: 1rem;
 }
-
 
 .ft_end {
   border-top: rgba(128, 128, 128, 0.24) solid 1px;
