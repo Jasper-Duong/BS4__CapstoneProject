@@ -640,7 +640,7 @@ h1 .navbar-brand {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 90%;
   height: 60%;
 }
@@ -657,4 +657,279 @@ h1 .navbar-brand {
 }
 .dark__header {
   color: #eee !important;
+}
+
+/* Phần blogpost */
+.post_ft_duoi {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_ft_infor {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.post_ft_duoi .post_ft_infor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.post_ft_duoi .post_ft_infor p {
+  font-weight: 600;
+  color: #232121;
+}
+
+/* phần blog_pos */
+.blogpost {
+  background: var(--bg-grey);
+}
+.card {
+  border: none;
+  background: none;
+}
+.card-body {
+  padding: 0;
+}
+.blogpost__item {
+  position: relative;
+}
+
+.blogpost__item img {
+  border-radius: 10px;
+}
+
+.blogpost__tong .blogpost__item .blogpost__pos button.btn__pos:hover {
+  background-color: #af4600;
+}
+
+.blogpost__tong .blogpost__item .blogpost__pos button.btn__pos {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.blogpost__tong .blogpost__item .blogpost__pos span {
+  color: white;
+  font-size: 15px;
+}
+
+.blogpost__tong .blogpost__item .blogpost__pos span i {
+  color: white;
+  margin-right: 8px;
+  font-size: 15px;
+}
+
+.blogpost__pos {
+  bottom: 10px;
+  position: absolute;
+  left: 10px;
+}
+.blog__right {
+  margin-left: 10px;
+}
+/* Phần slide people */
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background-color: #232121;
+}
+
+.carousel-indicators {
+  bottom: -3rem;
+  left: 0;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #ff6600;
+}
+
+.slide_people {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.header-title {
+  margin-bottom: 2.5rem;
+}
+
+.people_tong {
+  max-width: 700px;
+  margin: auto;
+}
+
+.people_tong .people_content img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.people_tong .people_content h5 {
+  font-size: 4rem;
+  color: #ff6600;
+}
+
+.people_tong .people_content h6 {
+  font-size: 24px;
+  line-height: 36px;
+  color: darkslategrey;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.people_tong .people_info {
+  margin-top: 2rem;
+}
+
+.people_tong .people_info h3 {
+  font-size: 1.5rem;
+  color: #232121;
+}
+
+/* Hết phần slide people  */
+
+/* Phần footer */
+footer {
+  background-color: #000;
+  margin-top: 80px;
+}
+
+.footer_logo {
+  margin-bottom: 1rem;
+}
+
+.footer_logo h2 {
+  color: white;
+}
+
+.footer1 p {
+  color: gray;
+}
+
+.footer_social {
+  margin-top: 2rem;
+  color: #ff6600;
+}
+
+.footer_social a {
+  margin-right: 0.5rem;
+  width: 36px;
+  height: 36px;
+  width: 36px;
+  display: inline-block;
+  height: 36px;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 10px;
+  color: var(--primary-color) !important;
+
+  transition: all 0.5s;
+}
+
+/* hover */
+.footer_social a:hover {
+  background-color: #ff6600;
+}
+
+.footer_social a i {
+  /* padding: 0.5rem; */
+  /* color: #ff6600; */
+  transition: all 0.5s;
+}
+
+.footer_social a i:hover {
+  color: #f7f7f7;
+}
+
+/* footer2 */
+.footer_tong h4.h4_title_ft {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+  color: #fff;
+}
+
+.footer_tong .footer2 ul li {
+  list-style: none;
+  margin-bottom: 1rem;
+  color: gray;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-size: 1.2rem;
+}
+
+.footer_tong .footer2 ul li a {
+  color: gray;
+  transition: all 0.5s;
+}
+
+.footer_tong .footer2 ul li a:hover {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+.btn-style {
+  padding: 1rem 0;
+  background-color: #ff6600;
+  font-size: 1.2rem;
+  border: none;
+  transition: all 0.5s;
+}
+
+.btn-style:hover {
+  background: #af4600;
+}
+
+.input_ft {
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.ft_end {
+  border-top: rgba(128, 128, 128, 0.24) solid 1px;
+  padding-top: 1.5rem;
+  background-color: #000;
+}
+
+.ft_end_title p {
+  color: gray;
+}
+
+.ft_end_title p a {
+  color: #ff6600;
+}
+
+.text_ft_right li {
+  list-style: none;
+}
+
+.text_ft_right li a {
+  color: gray;
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+.text_ft_right li a:hover {
+  color: #ff6600;
+  text-decoration: none;
 }
